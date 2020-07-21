@@ -1,0 +1,90 @@
+body, 
+html {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Crimson Text', serif;
+    background: url(header.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* set default font for all main text */
+h1, h2, p, a {
+    font-family: 'Crimson Text', serif;
+    color: white;
+}
+
+hr {
+    border: 1px solid white;
+    width: 80%;
+}
+
+/* remove navbar toggler border on click */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* bootstrap .text-center */
+.text-center {
+    padding: 20px 0px;
+    max-width: 800px;
+}
+
+/* bootstrap button override */
+.btn-xl {
+    font-family: 'Crimson Text', serif;
+    background-color: #d38080;
+    border-color: #d38080;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1.1em;
+    border-radius: 300px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.btn-xl:active, .btn-xl:hover, .btn-xl:focus {
+    background-color:  rgb(199, 51, 78);
+    border-color: rgb(199, 51, 78);
+    transition: .2s;
+}
+
+/* flex wrapper for body content under nav bar */
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* main flex container */
+.main-box {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    flex: 1 0 auto;
+    min-height: 380px;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(216,216,218,0.4971509971509972) 0%, rgba(65,149,189,0.5028490028490029) 50%, rgba(216,216,218,0.5) 100%); */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(121, 32, 49,0.25) 50%, rgba(255,255,255,0.2) 100%);  
+}
+
+.footer {
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .9);
+}

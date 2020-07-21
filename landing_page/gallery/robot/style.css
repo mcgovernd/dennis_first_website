@@ -1,0 +1,189 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #993350;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+} 
+
+.eyes {
+	width: 50%;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.head:hover {
+	width: 225px;
+    transition: .3s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+} 
+
+.left_arm:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+	transition: .1s ease-in-out;
+}
+
+.right_arm { 
+	margin-left: 10px; 
+} 
+
+.right_arm:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+	transition: .1s ease-in-out;
+}
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+	display: flex;
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+	transition: .1s ease-in-out;
+}
+
+.right_leg { 
+	margin-left: 30px; 	
+}
+
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+	transition: .1s ease-in-out;
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	/* position: relative; 
+	top: 100px; 
+	left: 40px;  */
+} 
+
+.right_eye { 
+	/* position: relative; 
+	top: 100px; 
+	left: 120px;  */
+}
+
+p {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.fsu {
+	width: 100px;
+	border-radius: 50%;
+	opacity: 0.75;
+	margin-top: 20px;
+}
+
+.fsu:hover {
+	transition: .5s;
+	opacity: .9;
+	box-shadow:
+	0 0 5px 3px #fff,  /* inner white */
+	0 0 15px 7px rgb(238, 134, 148), /* middle magenta */
+	0 0 25px 10px rgb(158, 194, 194); /* outer cyan */
+}
+
+.eyes:hover > .left_eye {
+	transition: .25s;
+	opacity: 1;
+	box-shadow:
+	0 0 5px 3px #fff,  /* inner white */
+	0 0 15px 7px rgb(238, 134, 148), /* middle magenta */
+	0 0 25px 10px rgb(158, 194, 194); /* outer cyan */
+}
+
+.eyes:hover > .right_eye {
+	transition: .25s;
+	opacity: 1;
+	box-shadow:
+	0 0 5px 3px #fff,  /* inner white */
+	0 0 15px 7px rgb(238, 134, 148), /* middle magenta */
+	0 0 25px 10px rgb(158, 194, 194); /* outer cyan */
+}
