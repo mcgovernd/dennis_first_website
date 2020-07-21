@@ -1,0 +1,201 @@
+body, 
+html {
+    margin: 0;
+    padding-top: 20px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Crimson Text', serif;
+    /* background: url(background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    background-color: white;
+}
+
+/* remove navbar toggler border on click */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* set default font for all main text */
+h1, h2, h3, p, a {
+    font-family: 'Crimson Text', serif;
+    color: black;
+}
+
+h1.headline {
+    font-size: 1.8em;
+}
+
+h3.headline {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 1.4em;
+}
+
+/* header items */
+.header {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.headline {
+    text-align: center;
+}
+
+hr {
+    border: 1px thin black;
+}
+
+/* art info text blurb w/ background */
+.art-info {
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(211, 248, 255, 0.541), rgba(255,255,255,1)), url("painterly-header.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-top: solid rgba(0, 0, 0, 0.274) 1px;
+    border-bottom: solid rgba(0, 0, 0, 0.274) 1px;
+    font-size: 1em;
+}
+
+/* ----- CSS grid ----- */
+.art-container {
+    margin: 0px auto;
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 400px 400px;
+    background-color: rgba(0, 0, 0, .1);
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+.one {
+    background: url("freelance/rest-stop.png");
+    background-size: cover;
+    background-position: center;
+    transition: .35s;
+}
+
+.two {
+    background: url("freelance/green-drake.png");
+    background-size: cover;
+    background-position: center;
+    transition: .35s;
+}
+
+
+.three {
+    background: url("freelance/hof-final.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .35s;
+
+}
+
+.four {
+    background: url("freelance/slayer-chosen.png");
+    background-size: cover;
+    background-position: center;
+    transition: .35s;
+}
+
+.five {
+    background: url("freelance/finder2-final.png");
+    background-size: cover;
+    background-position: center;
+    transition: .35s;
+}
+
+.six {
+    background: url("freelance/silent-choir.png");
+    background-size: cover;
+    background-position: center;
+    transition: .35s;
+}
+
+.seven {
+    background: url("freelance/k4ab.png");
+    background-size: cover;
+    background-position: center;
+    transition: .35s;
+}
+
+.eight {
+    background: url("freelance/twig-testa.png");
+    background-size: cover;
+    background-position: center;
+    transition: .35s;
+}
+
+/* on-hover effects */
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover,
+.eight:hover {
+    transition: .35s;
+    margin-left: -5%;
+    margin-right: 5%;
+    -webkit-box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.692);
+    -moz-box-shadow: 3px 5px 10px -2px rgba(0,0,0,0.692);
+    box-shadow: 3px 5px 10px -2px rgba(0,0,0,0.692);
+}
+
+.overlay {
+    background-color: rgba(0,0,0,.5);
+    opacity: 0%;
+    width: 100%;
+    margin: auto 0px;
+    padding: 5px;
+    transition: .35s;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.one:hover .overlay,
+.two:hover .overlay,
+.three:hover .overlay,
+.four:hover .overlay,
+.five:hover .overlay,
+.six:hover .overlay,
+.seven:hover .overlay,
+.eight:hover .overlay {
+    opacity: 100%;
+}
+
+/* set visuals and hover functionality for clickable preview area */
+.clickable {
+    display: block;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(255,255,255,0);
+    transition: .35s;
+}
+
+.one:hover .clickable,
+.two:hover .clickable,
+.three:hover .clickable,
+.four:hover .clickable,
+.five:hover .clickable,
+.six:hover .clickable,
+.seven:hover .clickable,
+.eight:hover .clickable
+{
+    background-color: rgba(255,255,255,.25);
+    transition: .35s;
+}
+
+.footer {
+    padding: 10px 0px;
+    text-align: center;
+}
